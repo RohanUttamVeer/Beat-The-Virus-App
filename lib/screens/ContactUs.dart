@@ -110,15 +110,6 @@ class _ContactUsState extends State<ContactUs> {
           SizedBox(height: 10),
           Column(
             children: [
-              Image(image:AssetImage("assets/icons/btvlogo.png"),
-              height: 50,
-              width:50,
-              ),
-            ],
-          ),
-          SizedBox(height: 10),
-          Column(
-            children: [
               Text('© 2021 Beat The Virus',
               style: TextStyle(
                 color: Colors.black,

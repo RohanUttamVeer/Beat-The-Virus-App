@@ -1,5 +1,6 @@
 import 'package:beat_the_virus/widgets/DrawerItems.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'widgets/DrawerItems.dart';
 
 void main() {
@@ -11,15 +12,18 @@ class BeatTheVirus extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            drawer: Drawer(
-              child: DrawerItems(),
+        home: Scaffold(drawer: Drawer(child: DrawerItems(),),
+           // backgroundColor: Colors.blue[300],
+           // actionsIconTheme: IconThemeData(color: Colors.white),
+            body:Center(
+              child: SpinKitCircle(
+                color: Colors.black,
+                size: 50.0,
+              ),
             ),
             appBar: AppBar(
                 title: Text("Beat The Virus"),
                 backgroundColor: Colors.blue[300],
-                // backgroundColor: Color(0xFF82D8FF),
-                //backgroundColor: Colors.lightBlueAccent,
                 actionsIconTheme: IconThemeData(color: Colors.white),
                 actions: <Widget>[
                   IconButton(
